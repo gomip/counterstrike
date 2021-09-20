@@ -1,0 +1,219 @@
+@font-face{
+	font-family:  cs;
+	src: url('../styles/cs_regular.ttf');
+}
+
+body{
+	margin:  0;
+	font-family: cs;
+}
+
+.screen-wrapper{
+	width: 100vw;
+	height: 100vh;
+	position:  relative;
+}
+
+.image-wrapper{
+	height:  100%;
+	/*background-repeat: no-repeat;
+	background-size:  cover;
+	background-image: url('../image/window10.jpg');*/
+}
+
+/* 좌측 하단 */
+.lb-wrapper{
+	position:  fixed;
+	width:  300px;
+	height:  40px;
+	bottom: 0;
+	left:  0;
+	background: linear-gradient(90deg, rgba(53,53,53,0.6) 50%, rgba(0,0,0,0.1) 100%);
+	border-bottom-left-radius: 20px;
+
+	display:  flex;
+	justify-content: center;
+	align-items:  center;
+}
+
+.lb-wrapper > .hs{
+	display:  flex;
+	align-items:  center;
+}
+
+.lb-wrapper > .hs > p{
+	margin:  0;
+	color: #FFFFDC;
+}
+
+.lb-wrapper > .hs > .number{
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+.lb-wrapper > .hs > .bar{
+	margin-left: 10px;
+	width:  50px;
+	height:  10px;
+	background-color: #A8B486;
+}
+
+.lb-wrapper > .hs:last-child{
+	margin-left: 10px;
+}
+
+/* 우측 하단 */
+.rb-wrapper{
+	position:  fixed;
+	width:  300px;
+	bottom: 0;
+	right:  0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rb-wrapper > .weapon-wrapper{
+	margin-bottom: 10px;
+	width: 100%;
+
+}
+
+.rb-wrapper > .weapon-wrapper > .weapon-content{
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(-90deg, rgba(53,53,53,0.6) 50%, rgba(0,0,0,0.1) 100%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.rb-wrapper > .weapon-wrapper > .weapon-content > .weapon{
+	display: flex;
+	margin-top: 10px;
+}
+
+.rb-wrapper > .weapon-wrapper > .weapon-content > .weapon > p{
+	margin:  0;
+	font-size: 16px;
+	color: #FFFFDC;
+}
+
+.rb-wrapper > .weapon-wrapper > .weapon-content > .weapon > .weapon-img {
+	width: 200px;
+	height: 30px;
+	background-color: #FFFFDC;
+	margin-right: 10px;
+} 
+
+.rb-wrapper > .weapon-wrapper > .weapon-content > .weapon-name {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	margin-top: 10px;
+	margin-right: 20px;
+	color: #FFFFDC;
+}
+
+.rb-wrapper > .bullet{
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	width:  100%;
+	height: 40px;
+	background: linear-gradient(-90deg, rgba(53,53,53,0.6) 50%, rgba(0,0,0,0.1) 100%);
+	border-bottom-right-radius: 20px;
+}
+
+.rb-wrapper > .bullet > p{
+	color: #FFFFDC;
+}
+
+.rb-wrapper > .bullet > .left{
+	font-size:  30px;
+}
+.rb-wrapper > .bullet > .total {
+	font-size:  20px;
+}
+
+/* 좌측 상단 */
+.lt-wrapper{
+	position:  fixed;
+	width:  300px;
+	top: 0;
+	left:  0;
+
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:  center;
+}
+
+.lt-wrapper > .location {
+	width:  100%;
+	height:  40px;
+	background: linear-gradient(90deg, rgba(53,53,53,0.6) 50%, rgba(0,0,0,0.1) 100%);
+	border-top-left-radius: 20px;
+
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFDC;
+	font-size: 20px;
+}
+
+.lt-wrapper > .map{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: black;
+	border: 3px solid #FFFFDC;
+	margin-top: 10px;
+}
+
+.lt-wrapper > .money{
+	width:  100%;
+	height:  40px;
+	background: linear-gradient(90deg, rgba(53,53,53,0.6) 50%, rgba(0,0,0,0.1) 100%);
+	margin-top: 10px;	
+	color: #FFFFDC;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+}
+/* 우측 상단  */
+.rt-wrapper {
+	position:  fixed;
+	width:  300px;
+	height:  20px;
+	top: 10px;
+	right:  0;
+	background: linear-gradient(-90deg, rgba(53,53,53,0.6) 50%, rgba(0,0,0,0.1) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFDC;
+	font-size: 20px;
+}
+
+/* 중간 상단  */
+.ct-wrapper{
+	position:  fixed;
+	width: 50px;
+	height: 30px;
+	top: 10px;
+	left: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ct-wrapper > p {
+	margin:  0;
+	color: #FFFFDC;
+	font-size: 20px;
+}
