@@ -1,0 +1,206 @@
+@font-face{
+    font-family:  cs;
+    src: url('../styles/cs_regular.ttf');
+}
+
+body{
+    margin:  0;
+    /*font-family: cs;*/
+}
+
+#hud-wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 배경사진 */
+.image-wrapper{
+    height:  100%;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-image: url('../image/window10.jpg');
+}
+
+/* ----------------------------- 지도 ----------------------------- */
+#game-map{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    background-color: black;
+    opacity: 50%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+/* ----------------------------- 점수 ----------------------------- */
+.score-wrapper{
+    position:  fixed;
+    top: 10px;
+    left: calc(50% - 115px);
+
+    width: 180px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-wrapper > #red-score{
+    width: 40px;
+    height: 100%;
+    background-color: #FF5E5E;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 24px;
+}
+
+.score-wrapper > #time{
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 24px;
+}
+
+.score-wrapper > #blue-score{
+    width: 40px;
+    height: 100%;
+    background-color: #5E89FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 24px;
+}
+
+/* ----------------------------- 로그 ----------------------------- */
+#kill-log-wrapper{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 110px;
+
+}
+
+#kill-log-wrapper > .kill-log{
+    width: auto;
+    height: 30px;
+    background-color: rgba(0,0,0, 0.3);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 5px;
+}
+
+#kill-log-wrapper > .kill-log > .blue-kill, .blue-killed{
+    color: #5E89FF;
+    font-weight: bold;
+}
+#kill-log-wrapper > .kill-log > .red-kill, .red-killed{
+    color: #FF5E5E;
+    font-weight: bold;
+}
+
+#kill-log-wrapper > .kill-log > .with{
+    margin: 0 10px;
+}
+
+/* ----------------------------- 체력 ----------------------------- */
+.lb-wrapper{
+    position:  fixed;
+    bottom: 10px;
+    left: 10px;
+
+    /*background-color: rgba(94,137,255,0.3);*/
+    width: auto;
+    height: 110px;
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+.lb-wrapper > h2{
+    margin:  0;
+    color: white;
+}
+
+.lb-wrapper > h2 > span{
+    font-size: 20px;
+    color: #E5E5E5;
+}
+
+.lb-wrapper > .hp-wrapper{
+    width: 350px;
+    height: 40px;
+    margin: 5px 0 5px 0;
+    /*background-color: #ccc;*/
+    transform:  skew(25deg);
+    padding: 1px 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lb-wrapper > .hp-wrapper > .hp-box{
+    width: 32px;
+    height: 38px;
+    background-color: white;
+    border: 3px solid #DBFFFE;
+    box-sizing: border-box;
+    margin-left: 3px;
+}
+
+/* ----------------------------- 무기 ----------------------------- */
+.rb-wrapper{
+    position:  fixed;
+    bottom:  10px;
+    right: 10px;
+
+/*    background-color:  #5E89FF;*/
+    width: 400px;
+    height: 110px;
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+.rb-wrapper > .bullet-wrapper {
+    position: absolute;
+    bottom: 10px;
+}
+.rb-wrapper > .bullet-wrapper > h2{
+    margin:  0;
+    color: white;
+    text-align: right;
+}
+
+.rb-wrapper > .bullet-wrapper > h2 > span{
+    font-size: 20px;
+    color: #E5E5E5;
+}
+
+.rb-wrapper > .weapon{
+    position: absolute;
+    right: 10px;
+    width: 250px;
+    height: 90px;
+    background-color: #ccc;
+    border-radius: 10px;
+}

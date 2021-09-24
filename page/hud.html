@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../styles/hud.css" />
+    </head>
+
+    <body>
+        <div id="hud-wrapper">
+            <!-- 이미지 ㅁ배경 -->
+            <div class="image-wrapper" ></div>
+
+            <!-- 좌측 상단 지도 -->
+            <div id="game-map"></div>
+
+            <!-- 중앙 상단 점수판 -->
+            <div class="score-wrapper">
+                <div id="red-score">3</div>
+                <div id="time">10:00</div>
+                <div id="blue-score">3</div>
+            </div>
+
+            <!-- 우측 상단 지도 -->
+            <div id="kill-log-wrapper">
+                <div class="kill-log">
+                    <span class="blue-kill">test 1</span>
+                     <div class="with"> > </div>
+                    <span class="red-killed">test 2</span>
+                </div>
+                <div class="kill-log">
+                    <span class="red-kill">test 2</span>
+                     <div class="with"> < </div>
+                    <span class="blue-killed">test 1</span>
+                </div>
+            </div>
+
+            <!-- 좌측 하단 피통 -->
+            <div class="lb-wrapper">
+                <h2>100&nbsp;/&nbsp;<span>100</span></h2>
+                <div class="hp-wrapper">
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                    <div class="hp-box"></div>
+                </div>
+            </div>
+            <!-- 우측 하단 총 -->
+            <div class="rb-wrapper">
+                <div class="bullet-wrapper">
+                    <h2 id="left-bullet">
+                        100&nbsp;/&nbsp;
+                        <span id="total-bullet">100</span>
+                    </h2>
+                </div>
+                <div class="weapon">여기가 총임 ㅋㅋ</div>
+            </div>
+        </div>
+    </body>
+</html>
