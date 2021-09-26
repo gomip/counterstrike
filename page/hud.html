@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/hud.css" />
+        <script type="text/javascript" src="../service/hud.js"></script>
     </head>
 
     <body>
@@ -30,6 +31,17 @@
                      <div class="with"> < </div>
                     <span class="blue-killed">test 1</span>
                 </div>
+            </div>
+
+            <!-- 중앙 이벤트 목록 -->
+            <div class="event-wrapper">
+                <button id="body-shot" onclick="bodyShot()">1. 바디샷</button>
+                <button id="head-shot">2. 헤드샷</button>
+                <button id="bkill">3. 블루킬</button>
+                <button id="rkill">4. 레드킬</button>
+                <button id="switch-weapon">5. 총 바꾸기</button>
+                <button id="bwin">6. 블루팀 승리</button>
+                <button id="rwin">7. 레드팀 승리</button>
             </div>
 
             <!-- 좌측 하단 피통 -->

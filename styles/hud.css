@@ -204,3 +204,18 @@ body{
     background-color: #ccc;
     border-radius: 10px;
 }
+
+/* ----------------------------- 이벤트 ----------------------------- */
+.event-wrapper{
+    position: fixed;
+    top:50%;
+    left:0;
+
+    width: 150px;
+    height: auto;
+}
+
+.event-wrapper > button{
+    display: block;
+    margin-bottom: 3px;
+}
